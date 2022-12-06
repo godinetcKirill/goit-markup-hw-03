@@ -90,11 +90,31 @@ ul {
 
 
 /* nav */
+.main-content{
+    display: flex;
+    align-items: center;
+}
 .site-nav{
+    margin-left: 77px;
+    display: flex;
     list-style: none;
 
 }
+.site-nav  li{
+    
+    margin-right: 40px;
+}
+
+.site-nav li:last-child{
+    margin-right: 0;
+}
+
+
+
 .site-nav a {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--title-text-color);
     font-weight: 600 ;
         font-size: 16px;
@@ -115,14 +135,24 @@ a.link.current {
 a.link.current{
     color: var(--primary-text-color);
 }
-
-.contact-nav{ 
+.contact-nav{
+    display: flex;
+    margin-left: auto;
+}
+.contact-nav .item{ 
     padding: 0;
-    margin: 0;
+    margin-left: 0;
     list-style: none;
     
 }
+.contact-nav .item+.item{
+    margin-left: 40px;
+}
 .contact-nav a{
+
+
+    display: flex;
+    margin-left: auto;
     color: var(--primary-text-color);
     text-decoration: none;
     
@@ -132,7 +162,9 @@ a.link.current{
     color: var(--accent-color);
 }     
 .list{
-    
+    margin: 0;
+    padding: 0;
+    justify-content: center;
     gap: 24px;
     display: flex;
     list-style: none;
@@ -174,8 +206,8 @@ a.link.current{
     margin:0;
 }
 .section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+   padding-top: 120px;
+padding-bottom: 120px;
     
 }
 .title{
@@ -262,24 +294,16 @@ color: var(--title-text-color);
     max-width: 100%;
     height: auto;
 }
- .lisst{
-
+.lisst {
     display: flex;
     flex-wrap: wrap;
-    margin-right:-24px;
-    margin-bottom:-48px;
-    gap:24px
+    gap: 24px;
     list-style-type: none;
- }
- .list-li{
-    margin-right: 24px;
-    margin-bottom: 48px;
- }
- .lisst{
-    padding: 0;
-    margin: 0;
- }
- 
+}
+
+.list-li {
+    flex-basis: calc((100% - 48px) / 3);
+}
 
 
 .border{
@@ -355,6 +379,11 @@ color: var(--title-text-color);
 /* portfolio button */
 
     .main-buttons{
+        display: flex;
+       
+        padding-top: 96px;
+        padding-bottom: 72px;
+        justify-content: center;
         font-family: Roboto, serif;
         list-style: none;
     }
