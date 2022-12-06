@@ -312,11 +312,13 @@ color: var(--title-text-color);
 .lisst {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 24px ;
     list-style-type: none;
 }
 
 .list-li {
+    margin-bottom: 24px;
+    
     flex-basis: calc((100% - 48px) / 3);
 }
 
