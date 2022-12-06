@@ -100,12 +100,12 @@ ul {
     list-style: none;
 
 }
-.site-nav  li{
+ .list-item{
     
     margin-right: 40px;
 }
 
-.site-nav li:last-child{
+.site-nav .list-item:last-child{
     margin-right: 0;
 }
 
