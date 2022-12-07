@@ -312,14 +312,13 @@ color: var(--title-text-color);
 .lisst {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px ;
+    row-gap: 48px ;
+    column-gap: 24px;
     list-style-type: none;
 }
 
 .list-li {
-    margin-bottom: 24px;
-    
-    flex-basis: calc((100% - 48px) / 3);
+     flex-basis: calc((100% - 48px) / 3);
 }
 
 
@@ -418,7 +417,7 @@ color: var(--title-text-color);
         border: 1px solid #E7E9FC;
     }
 
-    .site-buttons{
+    .li-buttons{
     
         margin-right: 24px;
     }
